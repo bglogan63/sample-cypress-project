@@ -27,9 +27,9 @@ pipeline {
         }
     }
 
-    post {
-        always {
-            publishHTML([allowMissing:false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: '/Downloads', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: ''])
-        }
-    }
+    // post {
+    //     always {
+    //         publishHTML([allowMissing:false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'cypress/report', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: ''])
+    //     }
+    // }
 }
